@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second trial</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: hsl(30, 38%, 92%);
+    }
+
+
+    .boss {
+      border-radius: 20px;
+      display: flex;
+      /* align-items: center; */
+      width: 500px;
+      background-color: white;
+
+    }
+
+    img {
+      width: 50%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+
+    }
+
+    .first {
+      padding: 20PX;
+    }
+
+    .first h1 {
+      font-family: 'fraunces';
+      font-size: 30px;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+
+    .first p {
+      font-size: 15px;
+      font-family: 'montserrat' serif;
+      /* letter-spacing: 1; */
+    }
+
+    .second p {
+      text-decoration: line-through;
+      margin-top: 8PX;
+    }
+
+    .second {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .second h1 {
+      margin-right: 10px;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      color: white;
+      font-weight: boldS;
+      border-radius: 5px;
+      background-color: hsl(158, 36%, 37%);
+    }
+
+    .button img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 1000px) {
+ 
+      .boss {
+        /* border-radius: 20px; */
+        flex-direction: column;
+        width: 90%;
+        background-color: white;
+
+      }
+
+      .perfume {
+        width: 100%;
+        height: 300px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+
+      }
+      .special{
+        width: 50px;
+      }
+      .first{
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="boss">
+    <img class="perfume" src="design/images/image-product-desktop.jpg" alt="">
+    <div class="first">
+      <p>PERFUME</p>
+      <br>
+      <h1>Gabrielle Essence Eau De Perfum</h1>
+      <p>A floral,solar and voluptous interpretation composed by olivier polge,perfumer-Creator for the
+        House of CHANEL</p>
+      <div class="second">
+        <h1>$149.66</h1>
+        <p>$169.66</p>
+      </div>
+      <div class="button">
+        <img  class="special" src="design/images/icon-cart.svg" alt="">
+        <p>Add to Cart</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
